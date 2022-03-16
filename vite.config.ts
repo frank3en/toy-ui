@@ -1,6 +1,7 @@
-import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+
+const path = require("path");
 
 console.log("path :>> ", path);
 
@@ -9,19 +10,15 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "lib/main.js"),
+      entry: path.resolve(__dirname, "src/helpers/test.ts"),
       name: "MyLib",
       fileName: (format) => `my-lib.${format}.js`,
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
       external: ["react"],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
         globals: {
-          vue: "React",
+          react: "React",
         },
       },
     },

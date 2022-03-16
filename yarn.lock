@@ -166,7 +166,7 @@
     "chalk" "^2.0.0"
     "js-tokens" "^4.0.0"
 
-"@babel/parser@^7.16.7", "@babel/parser@^7.17.3", "@babel/parser@^7.17.7":
+"@babel/parser@^7.1.0", "@babel/parser@^7.16.7", "@babel/parser@^7.17.3", "@babel/parser@^7.17.7":
   "integrity" "sha512-bm3AQf45vR4gKggRfvJdYJ0gFLoCbsPxiFLSH6hTVYABptNHY6l9NrhnucVjQ/X+SPtLANT9lc0fFhikj+VBRA=="
   "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.17.7.tgz"
   "version" "7.17.7"
@@ -235,7 +235,7 @@
     "debug" "^4.1.0"
     "globals" "^11.1.0"
 
-"@babel/types@^7.16.7", "@babel/types@^7.17.0":
+"@babel/types@^7.0.0", "@babel/types@^7.16.7", "@babel/types@^7.17.0", "@babel/types@^7.3.0":
   "integrity" "sha512-TmKSNO4D5rzhL5bjWFcVHHLETzfQ/AmbKpKPOSjlP0WoHZ6L911fgoOKY4Alp/emzG4cHJdyN49zpgkbXFEHHw=="
   "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.17.0.tgz"
   "version" "7.17.0"
@@ -268,6 +268,39 @@
   dependencies:
     "estree-walker" "^2.0.1"
     "picomatch" "^2.2.2"
+
+"@types/babel__core@7.1.18":
+  "integrity" "sha512-S7unDjm/C7z2A2R9NzfKCK1I+BAALDtxEmsJBwlB3EzNfb929ykjL++1CK9LO++EIp2fQrC8O+BwjKvz6UeDyQ=="
+  "resolved" "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.1.18.tgz"
+  "version" "7.1.18"
+  dependencies:
+    "@babel/parser" "^7.1.0"
+    "@babel/types" "^7.0.0"
+    "@types/babel__generator" "*"
+    "@types/babel__template" "*"
+    "@types/babel__traverse" "*"
+
+"@types/babel__generator@*":
+  "integrity" "sha512-tFkciB9j2K755yrTALxD44McOrk+gfpIpvC3sxHjRawj6PfnQxrse4Clq5y/Rq+G3mrBurMax/lG8Qn2t9mSsg=="
+  "resolved" "https://registry.npmjs.org/@types/babel__generator/-/babel__generator-7.6.4.tgz"
+  "version" "7.6.4"
+  dependencies:
+    "@babel/types" "^7.0.0"
+
+"@types/babel__template@*":
+  "integrity" "sha512-azBFKemX6kMg5Io+/rdGT0dkGreboUVR0Cdm3fz9QJWpaQGJRQXl7C+6hOTCZcMll7KFyEQpgbYI2lHdsS4U7g=="
+  "resolved" "https://registry.npmjs.org/@types/babel__template/-/babel__template-7.4.1.tgz"
+  "version" "7.4.1"
+  dependencies:
+    "@babel/parser" "^7.1.0"
+    "@babel/types" "^7.0.0"
+
+"@types/babel__traverse@*":
+  "integrity" "sha512-K2waXdXBi2302XUdcHcR1jCeU0LL4TD9HRs/gk0N2Xvrht+G/BfJa4QObBQZfhMdxiCpV3COl5Nfq4uKTeTnJA=="
+  "resolved" "https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.14.2.tgz"
+  "version" "7.14.2"
+  dependencies:
+    "@babel/types" "^7.3.0"
 
 "@types/node@17.0.21":
   "integrity" "sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ=="
